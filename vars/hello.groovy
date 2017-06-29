@@ -1,1 +1,3 @@
-echo 'hello world'
+def sayHello() {
+    echo 'hello world'
+}
