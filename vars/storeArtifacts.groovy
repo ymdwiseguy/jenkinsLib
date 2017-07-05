@@ -1,4 +1,7 @@
 def call() {
+    wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
+        echo "\033[1;32mStore Artifacts"
+    }
     archiveArtifacts artifacts: '**/target/classes/service_descriptor.yml', allowEmptyArchive: true, fingerprint: true
 
     stash includes: '**/target/classes/service_descriptor.yml', name: 'service_descriptor'
