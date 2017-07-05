@@ -1,3 +1,3 @@
 def sayHello() {
-    echo 'hello world'
+    echo "\033[32m hello world from lib \033[0m"
 }
